@@ -1,17 +1,19 @@
 import React from "react"
-import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Navbar, Nav, NavDropdown, Form, FormControl, Button, Container } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown, Form, FormControl, Button, Container, Col, Row } from 'react-bootstrap';
 
 
 import headerImage from '../images/header_image.jpg'
+import about_us_image from '../images/about_us.jpg'
+import portfolio_image from '../images/portfolio_image.jpg'
+import contact_us_image from '../images/contact_us.jpg'
 import './styles.css'
 
 const IndexPage = () => (
   <div className="page">
 <section>
   <Navbar bg="dark" variant="dark" expand="md" fixed="top">
-  <Navbar.Brand href="#home">Jason Dirnbauer Web Design</Navbar.Brand>
+  <Navbar.Brand href="#home">Jason Dirnbauer Web Design Studios</Navbar.Brand>
   <Navbar.Toggle />
   <Navbar.Collapse className="justify-content-end">
     <Navbar.Text>
@@ -20,6 +22,8 @@ const IndexPage = () => (
     <Nav.Link href="#portfolio">Portfolio</Nav.Link>
     <Nav.Link href="#blog">Blog</Nav.Link>
     <Nav.Link href="#contact">Contact</Nav.Link>
+    <Nav.Link href="#login">Login</Nav.Link>
+
   </Nav>
     </Navbar.Text>
   </Navbar.Collapse>
@@ -27,37 +31,47 @@ const IndexPage = () => (
       <SEO title="Jason Dirnbauer Web Design" />
       <img src={headerImage} alt="header" className="full_page_container"/>
       <div className="top-left text-color">
-        <h1 className="text-resize">Jason Dirnbauer.<br /></h1>
-        <h1 className="text-resize">Web Developer.<br /></h1>
+        <h1 className="text-resize">Jason Dirnbauer<br /></h1>
+        <h1 className="text-resize">Web Design Studios<br /></h1>
         <h1 className="text-resize">We make websites to help your company succeed.</h1>
       </div>
 </section>
-<Container>
-<section id="about">
-<p>Lorem ipsum dolor amet actually migas PBR&B shaman taxidermy ramps authentic distillery health goth. Roof party hell of glossier occupy. Flannel helvetica cronut flexitarian, meditation mustache wayfarers gochujang meh vexillologist affogato raclette. Aesthetic man bun truffaut chillwave cardigan actually cred put a bird on it farm-to-table kogi mixtape jean shorts occupy. IPhone typewriter photo booth scenester adaptogen subway tile cloud bread woke +1 deep v readymade narwhal coloring book dreamcatcher. Pug kickstarter farm-to-table, vape taiyaki waistcoat gluten-free snackwave.
-</p>
 
-<p>
-Helvetica before they sold out celiac whatever readymade fixie. Flannel 90's photo booth la croix everyday carry craft beer. Vaporware la croix taiyaki, fixie butcher franzen intelligentsia brooklyn drinking vinegar. You probably haven't heard of them letterpress enamel pin narwhal migas gluten-free listicle hammock air plant cloud bread echo park pop-up.
-</p>
+    <Container>
+    <Row id="about">
+      <Col md={6}>
+         <img src={about_us_image} alt="about us" ></img>
+      </Col>
+      <Col md={6}>
+      <h2 className="text-center">About</h2>
+      <p className="text-center ml-5">Jason Dirnbauer Web Design is a web design company located in the La Crosse, WI area. We develop sites for businesses that need a web presence to further their business goals. We enjoy working with businesses no matter the size because everyone can benefit from a well thought web presence. All of our sites are handmade which ensures that every detail is examined to ensure the best possible results for your business. Whether it be a new web site, a SEO optimization, or a site redesign Jason Dirnbauer Web Design Studios can assist.</p>
+      </Col>
+      </Row>
 
-<p>
-Knausgaard poke copper mug gentrify scenester lo-fi street art. Everyday carry synth tousled aesthetic. Try-hard air plant humblebrag shaman. Af kogi fixie portland aesthetic vape franzen lumbersexual. Umami shoreditch selvage paleo hashtag lo-fi fingerstache occupy sartorial. Poutine man bun next level cliche kogi mumblecore polaroid seitan venmo mlkshk pinterest drinking vinegar truffaut. Seitan cornhole air plant banh mi, master cleanse sustainable salvia 3 wolf moon pabst enamel pin cliche flexitarian humblebrag.
-</p>
-<p>Lorem ipsum dolor amet actually migas PBR&B shaman taxidermy ramps authentic distillery health goth. Roof party hell of glossier occupy. Flannel helvetica cronut flexitarian, meditation mustache wayfarers gochujang meh vexillologist affogato raclette. Aesthetic man bun truffaut chillwave cardigan actually cred put a bird on it farm-to-table kogi mixtape jean shorts occupy. IPhone typewriter photo booth scenester adaptogen subway tile cloud bread woke +1 deep v readymade narwhal coloring book dreamcatcher. Pug kickstarter farm-to-table, vape taiyaki waistcoat gluten-free snackwave.
-</p>
+      <Row id="portfolio">
+      <Col md={6}>
+        <img src={portfolio_image} alt="portfolio" ></img>
+      </Col>
+      <Col md={6}>
+        <h2 className="text-center">Portfolio</h2>
+        <p className="text-center ml-5">Our studio has had the opportunity to work with many fine clients including:</p>
+        <ul className="text-center">
+          <li><a href="https://www.thefrugalnomads.com" >The Frugal Nomads</a></li>
+        </ul>
+      </Col>
+      </Row>
 
-<p>
-Helvetica before they sold out celiac whatever readymade fixie. Flannel 90's photo booth la croix everyday carry craft beer. Vaporware la croix taiyaki, fixie butcher franzen intelligentsia brooklyn drinking vinegar. You probably haven't heard of them letterpress enamel pin narwhal migas gluten-free listicle hammock air plant cloud bread echo park pop-up.
-</p>
-
-<p>
-Knausgaard poke copper mug gentrify scenester lo-fi street art. Everyday carry synth tousled aesthetic. Try-hard air plant humblebrag shaman. Af kogi fixie portland aesthetic vape franzen lumbersexual. Umami shoreditch selvage paleo hashtag lo-fi fingerstache occupy sartorial. Poutine man bun next level cliche kogi mumblecore polaroid seitan venmo mlkshk pinterest drinking vinegar truffaut. Seitan cornhole air plant banh mi, master cleanse sustainable salvia 3 wolf moon pabst enamel pin cliche flexitarian humblebrag.
-</p>
-</section>
-</Container>
-
-  </div>
+      <Row id="contact">
+      <Col md={6}>
+        <img src={contact_us_image } alt="contact us" ></img>
+      </Col>
+      <Col md={6}>
+        <h2 className="text-center">Contact</h2>
+        <p className="text-center">If you'd like to work with our design studio please <a href="mailto:jason@jasondirnbauer.com">contact us.</a> </p>
+      </Col>
+      </Row>
+      </Container>
+</div>
 )
 
 export default IndexPage
