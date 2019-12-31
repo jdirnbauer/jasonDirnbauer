@@ -1,0 +1,53 @@
+/* Container holding the image and the text */
+.full_page_container{
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: -60;
+    width: 100%vh;
+  }
+  
+  /* Bottom left text */
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+  
+  /* Top left text */
+  .top-left {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    z-index: -50;
+  }
+  
+  /* Top right text */
+  .top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+  
+  /* Bottom right text */
+  .bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
+  
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .footer {
+      text-align: center;
+  }
+
+  .text-color { 
+      color: white;
+  }
